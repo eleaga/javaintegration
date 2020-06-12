@@ -1,5 +1,6 @@
 Feature: Crud user Impacta
 
+  @userNew
   Scenario: New user with Post
     Given user would like to create new user
     And user login is "NewUser"
@@ -15,7 +16,7 @@ Feature: Crud user Impacta
       Then the latest user see value "User X" in login
 
       Examples:
-      | login  |  User X
+      | login  |  User X |
 
       Scenario: Update
         Given the new user login "NewUser"
@@ -29,10 +30,10 @@ Feature: Crud user Impacta
           Then the new user is deleted
 
           Examples:
-          | login          | NewUser
-          | full_name      | User X
-          | Email          | user_x@gmail.com
-          | Age            | 25
+          | login          | NewUser |
+          | full_name      | User X |
+          | Email          | user_x@gmail.com |
+          | Age            | 25               |
 
 
 
